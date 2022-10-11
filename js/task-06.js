@@ -1,5 +1,5 @@
 
-const validInputText = ({ currentTarget }) => { 
+const onInputText = ({ currentTarget }) => { 
     const dataLenght = Number(currentTarget.dataset.length);
     
     currentTarget.classList.remove('valid');
@@ -8,4 +8,4 @@ const validInputText = ({ currentTarget }) => {
 };
 
 const inputRef = document.querySelector('#validation-input');
-inputRef.addEventListener('blur', validInputText);
+inputRef.addEventListener('blur', onInputText);
